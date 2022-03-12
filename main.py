@@ -3,7 +3,7 @@ import os
 from flask import Flask, request
 
 
-bot = telebot.TeleBot("593642481:AAEuoLHI.....")
+bot = telebot.TeleBot("5272849059:AAFcpFbq-C3sJW4lju1CX00S2c9CEbDM4vQ")
 
 server = Flask(__name__)
 
