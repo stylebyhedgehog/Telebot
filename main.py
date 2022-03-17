@@ -12,6 +12,9 @@ server = Flask(__name__)
 @bot.message_handler(commands = ['start'])
 def start(message):
   bot.send_message(message.chat.id, 'чем я могу помочь?')
+  img = open("z.jpg", 'rb')
+  bot.send_photo(message.chat.id, img)
+  img.close()
 
 @server.route('/' + TOKEN, methods=['POST'])
 def getMessage():
